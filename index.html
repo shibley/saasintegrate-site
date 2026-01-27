@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Integrate — Security Questionnaire Handling</title>
+    <meta name="description" content="We handle customer security questionnaires for SaaS companies. 48-72 hour turnaround so your deals don't stall.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #fafafa;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        
+        header {
+            margin-bottom: 60px;
+        }
+        
+        .logo {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: #2563eb;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+        }
+        
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: #0f172a;
+        }
+        
+        .subtitle {
+            font-size: 20px;
+            color: #475569;
+            margin-bottom: 40px;
+            max-width: 560px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: background 0.2s;
+        }
+        
+        .cta-button:hover {
+            background: #1d4ed8;
+        }
+        
+        .section {
+            margin: 80px 0;
+        }
+        
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: #0f172a;
+        }
+        
+        .problem {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 20px 24px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 40px;
+        }
+        
+        .problem p {
+            color: #92400e;
+            font-size: 15px;
+        }
+        
+        .features {
+            display: grid;
+            gap: 24px;
+        }
+        
+        .feature {
+            display: flex;
+            gap: 16px;
+        }
+        
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background: #eff6ff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 18px;
+        }
+        
+        .feature h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .feature p {
+            font-size: 15px;
+            color: #64748b;
+        }
+        
+        .how-it-works {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 32px;
+        }
+        
+        .steps {
+            display: grid;
+            gap: 24px;
+            counter-reset: step;
+        }
+        
+        .step {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+        
+        .step::before {
+            counter-increment: step;
+            content: counter(step);
+            width: 28px;
+            height: 28px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        
+        .step-content h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .step-content p {
+            font-size: 14px;
+            color: #64748b;
+        }
+        
+        .pricing-box {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            border-radius: 12px;
+            padding: 40px;
+            color: white;
+            text-align: center;
+        }
+        
+        .pricing-box h2 {
+            color: white;
+            margin-bottom: 8px;
+        }
+        
+        .price {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 16px 0;
+        }
+        
+        .price-detail {
+            opacity: 0.9;
+            font-size: 15px;
+            margin-bottom: 24px;
+        }
+        
+        .pricing-box .cta-button {
+            background: white;
+            color: #1e40af;
+        }
+        
+        .pricing-box .cta-button:hover {
+            background: #f1f5f9;
+        }
+        
+        footer {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            color: #64748b;
+            font-size: 14px;
+        }
+        
+        footer a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 32px;
+            }
+            
+            .subtitle {
+                font-size: 18px;
+            }
+            
+            .container {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="logo">
+                <span class="logo-icon">⚡</span>
+                SaaS Integrate
+            </a>
+        </header>
+        
+        <main>
+            <h1>Security questionnaires handled in 48-72 hours</h1>
+            <p class="subtitle">
+                Stop letting procurement paperwork block your enterprise deals. 
+                We handle security questionnaires end-to-end so your team can focus on closing.
+            </p>
+            <a href="mailto:shibley@saasintegrate.com" class="cta-button">Get Started →</a>
+            
+            <div class="section">
+                <div class="problem">
+                    <p><strong>Sound familiar?</strong> You're about to close a big deal, then procurement sends a 200-question security questionnaire. Your engineers get pulled off product work. The deal stalls. Rinse and repeat.</p>
+                </div>
+                
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">⚡</div>
+                        <div>
+                            <h3>48-72 Hour Turnaround</h3>
+                            <p>Fast enough to keep deals moving. No more "we'll get back to you next week."</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🎯</div>
+                        <div>
+                            <h3>Built for SaaS</h3>
+                            <p>We understand AWS, GCP, CI/CD, SOC 2, and modern infrastructure. No translation needed.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🔒</div>
+                        <div>
+                            <h3>Conservative & Honest</h3>
+                            <p>We never overclaim. If something should be "No" or "In progress," we say so clearly.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">📋</div>
+                        <div>
+                            <h3>Policies Included</h3>
+                            <p>Need an incident response plan or security policy? We'll draft it as part of the service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="how-it-works">
+                    <h2>How it works</h2>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-content">
+                                <h3>Send us the questionnaire</h3>
+                                <p>Excel, PDF, Word, or portal export — whatever format they sent you.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-content">
+                                <h3>Quick intake call (15 min)</h3>
+                                <p>We'll ask about your stack, what's in place, and any known gaps.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-content">
+                                <h3>We handle the rest</h3>
+                                <p>Draft responses, generate missing policies, flag anything that needs your input.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-content">
+                                <h3>Review and send</h3>
+                                <p>You review, we revise if needed, you submit to the customer. Deal unblocked.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="pricing-box">
+                    <h2>Simple pricing</h2>
+                    <div class="price">$2,000</div>
+                    <p class="price-detail">Per questionnaire · 48-72 hour turnaround · One round of revisions included</p>
+                    <a href="mailto:shibley@saasintegrate.com" class="cta-button">Get Started →</a>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Questions? <a href="mailto:shibley@saasintegrate.com">shibley@saasintegrate.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
