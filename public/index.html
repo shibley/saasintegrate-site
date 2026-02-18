@@ -4,20 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SaaS Integrate — We Build SEO Machines</title>
-  <meta name="description" content="Programmatic SEO, AI tool directories, and growth infrastructure that compounds. 800+ pages shipped across 4 sites in under 3 weeks. Built by Shibley.">
+  <meta name="description" content="Programmatic SEO, AI tool directories, and growth infrastructure that compounds. 500+ pages shipped across 3 sites in under 2 weeks. Built by Shibley.">
   <meta name="author" content="Shibley">
-  <link rel="canonical" href="https://saasintegrate.com">
 
   <!-- Open Graph -->
   <meta property="og:title" content="SaaS Integrate — We Build SEO Machines">
-  <meta property="og:description" content="Programmatic landing pages, AI-powered directories, and growth infrastructure that compounds. 800+ pages shipped across 4 sites in under 3 weeks.">
+  <meta property="og:description" content="Programmatic landing pages, AI-powered directories, and growth infrastructure that compounds. 500+ pages shipped across 3 sites in under 2 weeks.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://saasintegrate.com">
   <meta property="og:image" content="https://saasintegrate.com/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@shibley">
   <meta name="twitter:title" content="SaaS Integrate — We Build SEO Machines">
-  <meta name="twitter:description" content="Programmatic SEO, AI tool directories, and growth infrastructure that compounds. 800+ pages shipped.">
+  <meta name="twitter:description" content="Programmatic SEO, AI tool directories, and growth infrastructure that compounds.">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
@@ -27,40 +26,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <!-- JSON-LD Organization + WebSite Schema -->
+  <!-- JSON-LD Organization Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://saasintegrate.com/#organization",
-        "name": "SaaS Integrate",
-        "url": "https://saasintegrate.com",
-        "logo": "https://saasintegrate.com/logo.png",
-        "description": "Programmatic SEO, AI tool directories, and growth infrastructure. 800+ pages shipped across 4 sites in under 3 weeks.",
-        "founder": {
-          "@type": "Person",
-          "name": "Shibley",
-          "sameAs": "https://twitter.com/shibley"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "email": "shibley@saasintegrate.com",
-          "contactType": "sales"
-        },
-        "sameAs": [
-          "https://twitter.com/shibley"
-        ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://saasintegrate.com/#website",
-        "url": "https://saasintegrate.com",
-        "name": "SaaS Integrate",
-        "description": "Programmatic SEO, AI tool directories, and growth infrastructure that compounds.",
-        "publisher": { "@id": "https://saasintegrate.com/#organization" }
-      }
+    "@type": "Organization",
+    "name": "SaaS Integrate",
+    "url": "https://saasintegrate.com",
+    "logo": "https://saasintegrate.com/logo.png",
+    "description": "Programmatic SEO, AI tool directories, and growth infrastructure. 500+ pages shipped across 3 sites in under 2 weeks.",
+    "founder": {
+      "@type": "Person",
+      "name": "Shibley",
+      "sameAs": "https://twitter.com/shibley"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "shibley@saasintegrate.com",
+      "contactType": "sales"
+    },
+    "sameAs": [
+      "https://twitter.com/shibley"
     ]
   }
   </script>
@@ -84,7 +70,6 @@
       --accent-3:  #A5B4FC;
       --cyan:      #22D3EE;
       --cyan-dim:  #0E7490;
-      --green:     #34D399;
       --text:      #F1F5F9;
       --text-2:    #94A3B8;
       --text-3:    #64748B;
@@ -198,7 +183,6 @@
     .stagger-2 { transition-delay: 0.2s; }
     .stagger-3 { transition-delay: 0.3s; }
     .stagger-4 { transition-delay: 0.4s; }
-    .stagger-5 { transition-delay: 0.5s; }
 
     /* ── BUTTONS ── */
     .btn {
@@ -246,17 +230,6 @@
     }
     .btn-outline:hover {
       background: rgba(99,102,241,0.12);
-      transform: translateY(-1px);
-    }
-
-    .btn-calendly {
-      background: transparent;
-      color: var(--cyan);
-      border: 1.5px solid var(--cyan-dim);
-    }
-    .btn-calendly:hover {
-      background: rgba(34,211,238,0.1);
-      border-color: var(--cyan);
       transform: translateY(-1px);
     }
 
@@ -313,6 +286,15 @@
       display: flex;
       align-items: center;
       gap: 12px;
+    }
+
+    .nav-mobile-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text);
+      cursor: pointer;
+      padding: 4px;
     }
 
     /* ── HERO ── */
@@ -445,62 +427,6 @@
       margin-top: 2px;
     }
 
-    /* ── TECH STACK BAR ── */
-    #tech-bar {
-      background: var(--bg-2);
-      padding: 28px 0;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .tech-bar-inner {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 8px 32px;
-    }
-
-    .tech-bar-label {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--text-3);
-      margin-right: 8px;
-    }
-
-    .tech-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      padding: 6px 14px;
-      border-radius: 100px;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid var(--border);
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--text-2);
-      transition: border-color 0.2s, color 0.2s;
-    }
-    .tech-badge:hover {
-      border-color: var(--border-2);
-      color: var(--text);
-    }
-
-    .partner-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      padding: 6px 14px;
-      border-radius: 100px;
-      background: rgba(99,102,241,0.08);
-      border: 1px solid rgba(99,102,241,0.25);
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--accent-3);
-    }
-
     /* ── SERVICES ── */
     #services {
       background: var(--bg-2);
@@ -589,7 +515,7 @@
 
     .portfolio-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
 
@@ -653,11 +579,10 @@
 
     .portfolio-stat {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 10px;
       font-size: 13.5px;
       color: var(--text-2);
-      line-height: 1.5;
     }
 
     .portfolio-stat::before {
@@ -665,7 +590,6 @@
       color: var(--accent-2);
       font-weight: 700;
       flex-shrink: 0;
-      margin-top: 1px;
     }
 
     .portfolio-stat strong {
@@ -748,169 +672,6 @@
       font-size: 14px;
       color: var(--text-2);
       line-height: 1.65;
-    }
-
-    /* ── BUILD LOG ── */
-    #buildlog {
-      background: var(--bg);
-    }
-
-    .buildlog-inner {
-      max-width: 760px;
-    }
-
-    .buildlog-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      position: relative;
-    }
-
-    .buildlog-list::before {
-      content: '';
-      position: absolute;
-      left: 74px;
-      top: 0;
-      bottom: 0;
-      width: 1px;
-      background: linear-gradient(180deg, var(--accent) 0%, transparent 100%);
-      opacity: 0.25;
-    }
-
-    .buildlog-item {
-      display: grid;
-      grid-template-columns: 90px 1fr;
-      gap: 20px;
-      align-items: flex-start;
-      padding: 20px 0;
-      border-bottom: 1px solid var(--border);
-      position: relative;
-    }
-    .buildlog-item:last-child { border-bottom: none; }
-
-    .buildlog-date {
-      font-family: var(--font-display);
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--accent-2);
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      padding-top: 3px;
-      text-align: right;
-      padding-right: 20px;
-      position: relative;
-    }
-
-    .buildlog-date::after {
-      content: '';
-      position: absolute;
-      right: -6px;
-      top: 8px;
-      width: 11px;
-      height: 11px;
-      background: var(--accent);
-      border-radius: 50%;
-      border: 2px solid var(--bg);
-      box-shadow: 0 0 8px rgba(99,102,241,0.5);
-    }
-
-    .buildlog-content {
-      padding-left: 12px;
-    }
-
-    .buildlog-text {
-      font-size: 15px;
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    .buildlog-tag {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      margin-left: 8px;
-      vertical-align: middle;
-      background: rgba(52,211,153,0.1);
-      color: var(--green);
-      border: 1px solid rgba(52,211,153,0.2);
-    }
-
-    /* ── INSIGHTS ── */
-    #insights {
-      background: var(--bg-2);
-    }
-
-    .insights-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .insight-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 32px 28px;
-      text-decoration: none;
-      display: block;
-      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .insight-card::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: var(--radius-lg);
-      opacity: 0;
-      transition: opacity 0.3s;
-      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99,102,241,0.06) 0%, transparent 100%);
-    }
-
-    .insight-card:hover {
-      border-color: rgba(99,102,241,0.35);
-      transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-    }
-    .insight-card:hover::before { opacity: 1; }
-
-    .insight-tag {
-      display: inline-block;
-      padding: 3px 10px;
-      border-radius: 100px;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent-2);
-      background: rgba(99,102,241,0.1);
-      border: 1px solid rgba(99,102,241,0.2);
-      margin-bottom: 16px;
-    }
-
-    .insight-title {
-      font-family: var(--font-display);
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--white);
-      line-height: 1.35;
-      margin-bottom: 12px;
-      letter-spacing: -0.02em;
-    }
-
-    .insight-read {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--accent-2);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      margin-top: 20px;
     }
 
     /* ── PRICING ── */
@@ -1112,12 +873,18 @@
       font-weight: 700;
       color: var(--white);
       letter-spacing: -0.03em;
-      min-width: 90px;
+      min-width: 80px;
     }
 
     .about-metric-label {
       font-size: 14px;
       color: var(--text-2);
+    }
+
+    .about-tag-num {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent-2);
     }
 
     /* ── FAQ ── */
@@ -1208,28 +975,6 @@
       padding: 100px 24px;
     }
 
-    .cta-urgency {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 16px;
-      border-radius: 100px;
-      background: rgba(52,211,153,0.1);
-      border: 1px solid rgba(52,211,153,0.3);
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--green);
-      margin-bottom: 24px;
-    }
-
-    .cta-urgency-dot {
-      width: 7px;
-      height: 7px;
-      background: var(--green);
-      border-radius: 50%;
-      animation: pulse 2s infinite;
-    }
-
     .cta-title {
       font-family: var(--font-display);
       font-size: clamp(36px, 5vw, 60px);
@@ -1307,15 +1052,8 @@
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .services-grid,
+      .portfolio-grid,
       .pricing-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .portfolio-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .insights-grid {
         grid-template-columns: 1fr;
       }
 
@@ -1336,10 +1074,6 @@
 
       .nav-links { display: none; }
       .nav-cta .btn-ghost { display: none; }
-
-      .buildlog-list::before { display: none; }
-      .buildlog-item { grid-template-columns: 70px 1fr; gap: 12px; }
-      .buildlog-date::after { display: none; }
     }
 
     @media (max-width: 640px) {
@@ -1349,9 +1083,6 @@
       .hero-actions { flex-direction: column; align-items: flex-start; }
       .footer-inner { flex-direction: column; text-align: center; }
       .footer-links { justify-content: center; }
-      .tech-bar-inner { gap: 8px 16px; }
-      .buildlog-item { grid-template-columns: 1fr; gap: 6px; }
-      .buildlog-date { text-align: left; padding-right: 0; }
     }
   </style>
 </head>
@@ -1364,7 +1095,6 @@
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#portfolio">Work</a></li>
-      <li><a href="#insights">Insights</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="#about">About</a></li>
     </ul>
@@ -1389,14 +1119,11 @@
         Now shipping programmatic SEO
       </div>
       <h1 class="fade-up stagger-1">We build<br><span class="gradient-text">SEO machines.</span></h1>
-      <p class="hero-sub fade-up stagger-2">Programmatic landing pages, AI-powered directories, and growth infrastructure that compounds. <strong style="color:var(--text)">800+ pages shipped across 4 sites in under 3 weeks.</strong></p>
+      <p class="hero-sub fade-up stagger-2">Programmatic landing pages, AI-powered directories, and growth infrastructure that compounds. <strong style="color:var(--text)">500+ pages shipped across 3 sites in under 2 weeks.</strong></p>
       <div class="hero-actions fade-up stagger-3">
         <a href="#portfolio" class="btn btn-primary">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2L14 8L8 14M2 8H14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           See Our Work
-        </a>
-        <a href="https://calendly.com/shibley" target="_blank" rel="noopener" class="btn btn-calendly">
-          📅 Book a 15-min Call
         </a>
         <a href="mailto:shibley@saasintegrate.com?subject=I want to dominate search" class="btn btn-ghost">
           Get Started
@@ -1404,16 +1131,16 @@
       </div>
       <div class="hero-stats fade-in stagger-4">
         <div>
-          <div class="hero-stat-num"><span>800</span>+</div>
+          <div class="hero-stat-num"><span>500</span>+</div>
           <div class="hero-stat-label">Pages shipped</div>
         </div>
         <div>
-          <div class="hero-stat-num"><span>4</span></div>
+          <div class="hero-stat-num"><span>3</span></div>
           <div class="hero-stat-label">Live sites</div>
         </div>
         <div>
-          <div class="hero-stat-num"><span>3</span></div>
-          <div class="hero-stat-label">Weeks to ship all four</div>
+          <div class="hero-stat-num"><span>2</span></div>
+          <div class="hero-stat-label">Weeks to ship all three</div>
         </div>
         <div>
           <div class="hero-stat-num"><span>3.6M</span></div>
@@ -1423,23 +1150,6 @@
     </div>
   </div>
 </section>
-
-<!-- ── TECH / PARTNER BAR ── -->
-<div id="tech-bar">
-  <div class="container">
-    <div class="tech-bar-inner fade-in">
-      <span class="tech-bar-label">Built with</span>
-      <span class="tech-badge">▲ Next.js</span>
-      <span class="tech-badge">▲ Vercel</span>
-      <span class="tech-badge">⚡ Supabase</span>
-      <span class="tech-badge">🔍 DataForSEO</span>
-      <span class="tech-badge">📊 SEMrush</span>
-      <span style="width:1px;height:24px;background:var(--border);margin:0 8px;"></span>
-      <span class="partner-badge">★ SEMrush Affiliate Partner</span>
-      <span class="partner-badge">★ Better Stack Partner</span>
-    </div>
-  </div>
-</div>
 
 <div class="divider"></div>
 
@@ -1480,7 +1190,7 @@
     <div class="section-header">
       <div class="label fade-up">Our Work</div>
       <h2 class="section-title fade-up stagger-1">Numbers don't lie.</h2>
-      <p class="section-sub fade-up stagger-2">Four live sites. Real traffic. Real data. Built and shipped in under 3 weeks.</p>
+      <p class="section-sub fade-up stagger-2">Three live sites. Real traffic. Real data. Built and shipped in under 2 weeks.</p>
     </div>
     <div class="portfolio-grid">
 
@@ -1492,12 +1202,10 @@
         </div>
         <div class="portfolio-card-body">
           <div class="portfolio-stats">
-            <div class="portfolio-stat"><strong>250 landing pages</strong> targeting "is X down?" searches</div>
-            <div class="portfolio-stat"><strong>250+ landing pages</strong> and counting</div>
+            <div class="portfolio-stat"><strong>247 landing pages</strong> targeting "is X down?" searches</div>
             <div class="portfolio-stat">Targeting <strong>3.6M monthly searches</strong></div>
             <div class="portfolio-stat">Real-time monitoring of <strong>62 APIs</strong></div>
             <div class="portfolio-stat">Automated outage alerts via <strong>Twitter, Bluesky &amp; email</strong></div>
-            <div class="portfolio-stat">Replaced affiliate CTAs with <strong>own Alert Pro product ($9/mo)</strong> on 201 pages</div>
           </div>
           <a href="https://apistatuscheck.com" target="_blank" rel="noopener" class="portfolio-link">Visit Site →</a>
         </div>
@@ -1511,8 +1219,7 @@
         </div>
         <div class="portfolio-card-body">
           <div class="portfolio-stats">
-            <div class="portfolio-stat"><strong>272 tools</strong> indexed and profiled</div>
-            <div class="portfolio-stat"><strong>347 total pages</strong> across tool profiles &amp; categories</div>
+            <div class="portfolio-stat"><strong>267 tools</strong> indexed and profiled</div>
             <div class="portfolio-stat">Organized across <strong>16 categories</strong></div>
             <div class="portfolio-stat">Comparison pages, featured listings</div>
             <div class="portfolio-stat"><strong>SEO-optimized</strong> tool profiles for every entry</div>
@@ -1529,31 +1236,12 @@
         </div>
         <div class="portfolio-card-body">
           <div class="portfolio-stats">
-            <div class="portfolio-stat"><strong>240+ pages</strong> on return policies &amp; price match</div>
-            <div class="portfolio-stat"><strong>60+ retailer</strong> return policy pages</div>
-            <div class="portfolio-stat"><strong>10 cross-match</strong> price comparison guides</div>
-            <div class="portfolio-stat"><strong>8 long-tail keyword guides</strong> (Walmart no-receipt, Best Buy restocking fees, etc.)</div>
-            <div class="portfolio-stat"><strong>Embeddable comparison widget</strong> for bloggers</div>
+            <div class="portfolio-stat"><strong>185+ pages</strong> on return policies &amp; price match</div>
+            <div class="portfolio-stat">User ratings and <strong>embeddable widget</strong> for bloggers</div>
+            <div class="portfolio-stat"><strong>20 product-category guides</strong></div>
             <div class="portfolio-stat">Monetizable with affiliate and sponsored placements</div>
           </div>
           <a href="https://usersrated.com" target="_blank" rel="noopener" class="portfolio-link">Visit Site →</a>
-        </div>
-      </div>
-
-      <!-- Incudo.ai -->
-      <div class="portfolio-card fade-up stagger-4">
-        <div class="portfolio-card-top">
-          <div class="portfolio-domain">Incudo.ai</div>
-          <p class="portfolio-desc">AI Forge for marketing agencies — credit-based platform for AI-powered campaigns.</p>
-        </div>
-        <div class="portfolio-card-body">
-          <div class="portfolio-stats">
-            <div class="portfolio-stat"><strong>Credit-based AI platform</strong> landing page</div>
-            <div class="portfolio-stat">Converted from design to <strong>Next.js in under 1 hour</strong></div>
-            <div class="portfolio-stat">Built for <strong>marketing agencies</strong> scaling AI workflows</div>
-            <div class="portfolio-stat">Pixel-perfect implementation from <strong>Figma to production</strong></div>
-          </div>
-          <a href="https://incudo.ai" target="_blank" rel="noopener" class="portfolio-link">Visit Site →</a>
         </div>
       </div>
 
@@ -1591,121 +1279,6 @@
         <div class="step-title">Traffic, maintained &amp; scaled</div>
         <p class="step-desc">You get organic traffic. We monitor, iterate, and expand the footprint over time.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ── WHAT WE'VE BUILT THIS MONTH ── -->
-<section class="section" id="buildlog">
-  <div class="container">
-    <div class="section-header fade-up">
-      <div class="label">Build Log</div>
-      <h2 class="section-title">What we've shipped this month.</h2>
-      <p class="section-sub">We don't just talk about building — here's a live log of what's actually shipped. Credibility through consistency.</p>
-    </div>
-    <div class="buildlog-inner">
-      <div class="buildlog-list">
-
-        <div class="buildlog-item fade-up stagger-1">
-          <div class="buildlog-date">Feb 18</div>
-          <div class="buildlog-content">
-            <div class="buildlog-text">
-              🏆 250-page milestone hit on <strong>APIStatusCheck.com</strong> — 250 "is X down?" landing pages live and indexed
-              <span class="buildlog-tag">Shipped</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="buildlog-item fade-up stagger-2">
-          <div class="buildlog-date">Feb 18</div>
-          <div class="buildlog-content">
-            <div class="buildlog-text">
-              💰 Replaced affiliate CTAs with own product (<strong>Alert Pro @ $9/mo</strong>) across 201 APIStatusCheck pages — better monetization, same traffic
-              <span class="buildlog-tag">Shipped</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="buildlog-item fade-up stagger-3">
-          <div class="buildlog-date">Feb 18</div>
-          <div class="buildlog-content">
-            <div class="buildlog-text">
-              🛍️ Added <strong>14 new stores + 8 long-tail SEO pages</strong> to UsersRated — Walmart no-receipt, Best Buy restocking fees, and more
-              <span class="buildlog-tag">Shipped</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="buildlog-item fade-up stagger-4">
-          <div class="buildlog-date">Feb 18</div>
-          <div class="buildlog-content">
-            <div class="buildlog-text">
-              📧 <strong>90 cold outreach emails sent</strong> — prospecting new clients in the B2B SaaS and e-commerce verticals
-              <span class="buildlog-tag">Growth</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="buildlog-item fade-up stagger-5">
-          <div class="buildlog-date">Feb 17</div>
-          <div class="buildlog-content">
-            <div class="buildlog-text">
-              🔧 Built <strong>embeddable widget system</strong> for UsersRated — bloggers can now embed return policy comparisons on their sites
-              <span class="buildlog-tag">Shipped</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="buildlog-item fade-up">
-          <div class="buildlog-date">Feb 16</div>
-          <div class="buildlog-content">
-            <div class="buildlog-text">
-              🖼️ Launched <strong>OG image generation</strong> across all sites — every page now has a unique share card for social
-              <span class="buildlog-tag">Shipped</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ── INSIGHTS ── -->
-<section class="section" id="insights">
-  <div class="container">
-    <div class="section-header">
-      <div class="label fade-up">Insights</div>
-      <h2 class="section-title fade-up stagger-1">From the trenches of pSEO.</h2>
-      <p class="section-sub fade-up stagger-2">Hard-won lessons from building 800+ pages across real sites. No fluff.</p>
-    </div>
-    <div class="insights-grid">
-
-      <a href="#" class="insight-card fade-up stagger-1">
-        <div class="insight-tag">Case Study</div>
-        <div class="insight-title">How We Built 250 Status Pages in 2 Weeks</div>
-        <p style="font-size:14px;color:var(--text-2);line-height:1.65;">The full architecture breakdown — how we went from 0 to 250 indexed pages targeting 3.6M monthly searches, using a Next.js + Vercel stack.</p>
-        <div class="insight-read">Read Article →</div>
-      </a>
-
-      <a href="#" class="insight-card fade-up stagger-2">
-        <div class="insight-tag">Strategy</div>
-        <div class="insight-title">The pSEO Playbook: Finding Niches With Zero Competition</div>
-        <p style="font-size:14px;color:var(--text-2);line-height:1.65;">The exact framework we use to identify high-volume, low-competition keyword patterns before anyone else touches them.</p>
-        <div class="insight-read">Read Article →</div>
-      </a>
-
-      <a href="#" class="insight-card fade-up stagger-3">
-        <div class="insight-tag">Analysis</div>
-        <div class="insight-title">Why Return Policy Pages Are the Most Underserved SEO Niche</div>
-        <p style="font-size:14px;color:var(--text-2);line-height:1.65;">Millions of monthly searches, zero authoritative results, and pure transactional intent. Here's why we built UsersRated and why you should care.</p>
-        <div class="insight-read">Read Article →</div>
-      </a>
-
     </div>
   </div>
 </section>
@@ -1790,23 +1363,22 @@
         <p class="about-text">No bloated teams. No 6-week onboarding. No decks full of screenshots from someone else's case studies. You get the work, fast.</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;">
           <a href="mailto:shibley@saasintegrate.com" class="btn btn-primary" style="padding:12px 24px;font-size:14px;">Email Shibley</a>
-          <a href="https://calendly.com/shibley" target="_blank" rel="noopener" class="btn btn-calendly" style="padding:12px 24px;font-size:14px;">📅 Book a Call</a>
           <a href="https://twitter.com/shibley" target="_blank" rel="noopener" class="btn btn-ghost" style="padding:12px 24px;font-size:14px;">@shibley on X</a>
         </div>
       </div>
       <div class="about-visual fade-up stagger-2">
         <div class="about-card">
           <div class="about-metric">
-            <div class="about-metric-num">800<span style="color:var(--accent-2);font-size:20px">+</span></div>
+            <div class="about-metric-num">500<span style="color:var(--accent-2);font-size:20px">+</span></div>
             <div class="about-metric-label">Pages shipped and live</div>
           </div>
           <div class="about-metric">
-            <div class="about-metric-num">4</div>
+            <div class="about-metric-num">3</div>
             <div class="about-metric-label">Production sites launched</div>
           </div>
           <div class="about-metric">
-            <div class="about-metric-num">&lt;3<span style="color:var(--accent-2);font-size:18px">wk</span></div>
-            <div class="about-metric-label">To go from 0 → 800+ pages</div>
+            <div class="about-metric-num">&lt;2<span style="color:var(--accent-2);font-size:18px">wk</span></div>
+            <div class="about-metric-label">To go from 0 → 500 pages</div>
           </div>
           <div class="about-metric">
             <div class="about-metric-num">3.6M</div>
@@ -1941,25 +1513,18 @@
   <div class="container">
     <div class="cta-inner">
       <div class="fade-up">
-        <div class="cta-urgency">
-          <span class="cta-urgency-dot"></span>
-          Currently accepting 2 new clients for March
-        </div>
         <div class="label" style="justify-content:center;margin-bottom:20px;">Let's Build</div>
         <h2 class="cta-title">Ready to dominate search?</h2>
         <p class="cta-sub">Tell us your niche. We'll tell you exactly how many pages to build and why.</p>
         <div class="cta-actions">
-          <a href="https://calendly.com/shibley" target="_blank" rel="noopener" class="btn btn-primary" style="padding:16px 36px;font-size:16px;">
-            📅 Book a 15-min Call
-          </a>
-          <a href="mailto:shibley@saasintegrate.com?subject=Let%27s%20build%20my%20SEO%20machine" class="btn btn-ghost" style="padding:16px 32px;font-size:16px;">
+          <a href="mailto:shibley@saasintegrate.com?subject=Let%27s%20build%20my%20SEO%20machine" class="btn btn-primary" style="padding:16px 36px;font-size:16px;">
             Email Shibley →
           </a>
           <a href="#portfolio" class="btn btn-ghost" style="padding:16px 32px;font-size:16px;">
             See Examples First
           </a>
         </div>
-        <p style="margin-top:20px;font-size:13px;color:var(--text-3);">Usually responds within a few hours. Calendly link above for instant scheduling.</p>
+        <p style="margin-top:20px;font-size:13px;color:var(--text-3);">Usually responds within a few hours.</p>
       </div>
     </div>
   </div>
@@ -1974,7 +1539,6 @@
         <li><a href="https://apistatuscheck.com" target="_blank" rel="noopener">APIStatusCheck.com</a></li>
         <li><a href="https://aisotools.com" target="_blank" rel="noopener">AisoTools.com</a></li>
         <li><a href="https://usersrated.com" target="_blank" rel="noopener">UsersRated.com</a></li>
-        <li><a href="https://incudo.ai" target="_blank" rel="noopener">Incudo.ai</a></li>
         <li><a href="mailto:shibley@saasintegrate.com">Email</a></li>
         <li><a href="https://twitter.com/shibley" target="_blank" rel="noopener">@shibley</a></li>
       </ul>
@@ -2002,7 +1566,7 @@
 
   // Trigger hero elements immediately
   setTimeout(() => {
-    document.querySelectorAll('#hero .fade-up, #hero .fade-in, #tech-bar .fade-in').forEach((el) => {
+    document.querySelectorAll('#hero .fade-up, #hero .fade-in').forEach((el) => {
       el.classList.add('visible');
     });
   }, 80);
@@ -2028,7 +1592,7 @@
     });
   });
 
-  // ── Smooth nav highlight ──
+  // ── Smooth nav highlight (optional active states) ──
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
 
