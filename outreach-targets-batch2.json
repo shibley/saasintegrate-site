@@ -1,0 +1,302 @@
+[
+  {
+    "company": "Wingback",
+    "domain": "wingback.com",
+    "description": "B2B SaaS billing platform for hybrid pricing, usage-based, and per-seat pricing models",
+    "contact_email": "hello@wingback.com",
+    "founder": "Torben Friehe (CEO)",
+    "pseo_opportunity": "No comparison pages for 'Wingback vs Stripe Billing', 'Wingback vs Chargebee', or 'usage-based billing alternatives'",
+    "estimated_size": "YC W22, seed stage, 5-15 employees",
+    "category": "Fintech/Billing"
+  },
+  {
+    "company": "FlyCode",
+    "domain": "flycode.com",
+    "description": "AI-powered failed payment recovery and dunning management for subscription businesses",
+    "contact_email": "hello@flycode.com",
+    "founder": "Tzachi Davidovich (CEO)",
+    "pseo_opportunity": "Only 1 comparison page (vs ChurnBuster), missing 'FlyCode vs Stripe Recovery', 'FlyCode vs Gravy', 'dunning management alternatives'",
+    "estimated_size": "YC S22, 7 employees, Stripe/Shopify partner",
+    "category": "Fintech/Payments"
+  },
+  {
+    "company": "Zaymo",
+    "domain": "zaymo.com",
+    "description": "Interactive email builder for ecommerce brands on Shopify - enables in-email purchases, forms, and actions",
+    "contact_email": "sales@zaymo.com",
+    "founder": "Brice Douglas, Daniel Jones, Santiago Gomez Paz",
+    "pseo_opportunity": "No comparison pages, no 'Zaymo vs Klaviyo', 'interactive email alternatives', 'AMP email for Shopify'",
+    "estimated_size": "YC W24, 11 employees, Lehi UT",
+    "category": "E-commerce/Marketing"
+  },
+  {
+    "company": "OneText",
+    "domain": "onetext.com",
+    "description": "Text-to-buy SMS commerce platform enabling reply-and-buy purchases for DTC brands",
+    "contact_email": "hello@onetext.com",
+    "founder": "Jonathan Fudem (CEO), Daniel Brain (CTO)",
+    "pseo_opportunity": "No comparison pages, no 'OneText vs Postscript', 'SMS commerce alternatives', 'text-to-buy platforms'",
+    "estimated_size": "YC W23, 3-6 employees, backed by Khosla, Coatue",
+    "category": "E-commerce/SMS"
+  },
+  {
+    "company": "Depot",
+    "domain": "depot.dev",
+    "description": "Faster container image builds with distributed caching for Docker and GitHub Actions",
+    "contact_email": "hello@depot.dev",
+    "founder": "Jacob Gillespie, Kyle Galbraith",
+    "pseo_opportunity": "No dedicated comparison pages for 'Depot vs GitHub Actions', 'Depot vs Docker Hub', 'container build alternatives'",
+    "estimated_size": "YC-backed, seed $5.9M total, Beaverton OR",
+    "category": "Developer Tools"
+  },
+  {
+    "company": "Daytona",
+    "domain": "daytona.io",
+    "description": "Secure infrastructure for running AI-generated code with fast sandbox creation",
+    "contact_email": "hello@daytona.io",
+    "founder": "Vedran Jukic, Ivan Burazin",
+    "pseo_opportunity": "No comparison pages for 'Daytona vs GitHub Codespaces', 'AI sandbox alternatives', 'dev environment platforms'",
+    "estimated_size": "Seed $7M, NYC, founded 2023",
+    "category": "Developer Tools"
+  },
+  {
+    "company": "Meticulous",
+    "domain": "meticulous.ai",
+    "description": "AI-powered frontend testing that generates tests automatically without writing code",
+    "contact_email": "hello@meticulous.ai",
+    "founder": "Quentin Spencer-Harper, Gabriel Harper",
+    "pseo_opportunity": "No 'Meticulous vs Cypress', 'Meticulous vs Playwright', 'AI testing alternatives' pages",
+    "estimated_size": "YC, seed $4M, San Francisco",
+    "category": "Developer Tools"
+  },
+  {
+    "company": "Traceloop",
+    "domain": "traceloop.com",
+    "description": "LLM observability and evaluation platform for reliable AI application deployment",
+    "contact_email": "hello@traceloop.com",
+    "founder": "Nir Gazit, Gal Kleinman",
+    "pseo_opportunity": "No comparison pages for 'Traceloop vs Langfuse', 'LLM monitoring alternatives', 'AI observability tools'",
+    "estimated_size": "YC, seed $6.1M, Tel Aviv",
+    "category": "Developer Tools/AI"
+  },
+  {
+    "company": "Converge",
+    "domain": "runconverge.com",
+    "description": "Unified marketing measurement stack for online stores - attribution, consent, and analytics",
+    "contact_email": "hello@runconverge.com",
+    "founder": "YC S2023 founders",
+    "pseo_opportunity": "No 'Converge vs Triple Whale', 'Converge vs Northbeam', 'e-commerce attribution alternatives'",
+    "estimated_size": "YC S23, 6 employees, NYC",
+    "category": "E-commerce/Analytics"
+  },
+  {
+    "company": "SureBright",
+    "domain": "surebright.com",
+    "description": "AI-powered warranty platform for e-commerce merchants - embed AppleCare-like warranties in checkout",
+    "contact_email": "hello@surebright.com",
+    "founder": "Sanket, Manish (ex-Amazon, ex-PolicyBazar)",
+    "pseo_opportunity": "No 'SureBright vs Extend', 'SureBright vs Clyde', 'product warranty alternatives' pages",
+    "estimated_size": "YC S24, 20 employees, NYC",
+    "category": "E-commerce/Insurance"
+  },
+  {
+    "company": "Anglera",
+    "domain": "anglera.com",
+    "description": "AI agents for e-commerce operations - automates product data onboarding and enrichment",
+    "contact_email": "hello@anglera.com",
+    "founder": "Ex-Uber Eats ML team",
+    "pseo_opportunity": "No comparison pages for 'Anglera vs Salsify', 'product data automation alternatives', 'PIM alternatives'",
+    "estimated_size": "YC S24, 5 employees, San Francisco",
+    "category": "E-commerce/AI"
+  },
+  {
+    "company": "Handled",
+    "domain": "handled.com",
+    "description": "Post-order operations automation for e-commerce and 3PLs - shipping, returns, claims",
+    "contact_email": "hello@handled.com",
+    "founder": "YC S24 founders",
+    "pseo_opportunity": "No 'Handled vs AfterShip', 'Handled vs Narvar', 'post-purchase automation' pages",
+    "estimated_size": "YC S24, 2 employees, NYC",
+    "category": "E-commerce/Logistics"
+  },
+  {
+    "company": "Presti AI",
+    "domain": "presti.ai",
+    "description": "AI-powered product photography for furniture companies - generates photorealistic images",
+    "contact_email": "hello@presti.ai",
+    "founder": "Presti founding team",
+    "pseo_opportunity": "No 'Presti vs lifestyle photography', 'AI furniture photography alternatives', 'virtual staging for furniture'",
+    "estimated_size": "YC S24, seed $3.5M, 25 employees",
+    "category": "E-commerce/AI"
+  },
+  {
+    "company": "Corgi Labs",
+    "domain": "getcorgi.com",
+    "description": "Fraud detection and prevention for e-commerce - AI rules for Stripe, Shopify, Adyen",
+    "contact_email": "hello@getcorgi.com",
+    "founder": "YC W23 founders",
+    "pseo_opportunity": "No 'Corgi vs Signifyd', 'Corgi vs Riskified', 'e-commerce fraud prevention alternatives'",
+    "estimated_size": "YC W23, 3 employees, San Francisco",
+    "category": "E-commerce/Fraud"
+  },
+  {
+    "company": "Ruby Card",
+    "domain": "rubycard.io",
+    "description": "Neobank for e-commerce businesses with spend management and commerce platform integrations",
+    "contact_email": "hello@rubycard.io",
+    "founder": "YC W23 founders",
+    "pseo_opportunity": "No 'Ruby Card vs Mercury', 'Ruby Card vs Brex', 'e-commerce banking alternatives'",
+    "estimated_size": "YC W23, 3 employees, NYC",
+    "category": "Fintech/Banking"
+  },
+  {
+    "company": "Numeral",
+    "domain": "numeral.io",
+    "description": "Automated sales tax and VAT compliance for e-commerce - registrations, filings, and calculations",
+    "contact_email": "hello@numeral.io",
+    "founder": "YC W23 founders",
+    "pseo_opportunity": "No 'Numeral vs Avalara', 'Numeral vs TaxJar', 'sales tax automation alternatives'",
+    "estimated_size": "YC W23, 85 employees, San Francisco",
+    "category": "Fintech/Tax"
+  },
+  {
+    "company": "TestGorilla",
+    "domain": "testgorilla.com",
+    "description": "Pre-employment testing platform for talent assessments and screening job candidates",
+    "contact_email": "hello@testgorilla.com",
+    "founder": "Wouter Durville, Otto Verhage",
+    "pseo_opportunity": "No dedicated 'TestGorilla vs HackerRank', 'TestGorilla vs Codility', 'skills assessment alternatives' landing pages",
+    "estimated_size": "Series A $81M, Amsterdam, 5300+ customers",
+    "category": "HR/Recruiting"
+  },
+  {
+    "company": "Native AI",
+    "domain": "gonative.ai",
+    "description": "Market intelligence platform with AI for tracking customer feedback and consumer trends",
+    "contact_email": "hello@gonative.ai",
+    "founder": "Native AI founders",
+    "pseo_opportunity": "No 'Native AI vs Brandwatch', 'Native AI vs Sprinklr', 'market intelligence alternatives'",
+    "estimated_size": "Seed $5.7M, NYC",
+    "category": "Marketing/Analytics"
+  },
+  {
+    "company": "DemoDesk",
+    "domain": "demodesk.com",
+    "description": "Intelligent customer meeting platform with real-time sales coaching and objection handling",
+    "contact_email": "hello@demodesk.com",
+    "founder": "DemoDesk founders",
+    "pseo_opportunity": "No 'DemoDesk vs Gong', 'DemoDesk vs Zoom', 'sales meeting software alternatives'",
+    "estimated_size": "Seed $10.6M, Munich Germany",
+    "category": "Sales/Meetings"
+  },
+  {
+    "company": "UserPilot",
+    "domain": "userpilot.com",
+    "description": "Product adoption platform for in-app experiences, user onboarding, and feature adoption",
+    "contact_email": "hello@userpilot.com",
+    "founder": "UserPilot founders",
+    "pseo_opportunity": "Limited comparison content for 'UserPilot vs Pendo', 'UserPilot vs WalkMe', 'product adoption alternatives'",
+    "estimated_size": "Seed $5.9M, 500+ customers, Delaware",
+    "category": "Product/Adoption"
+  },
+  {
+    "company": "Adalo",
+    "domain": "adalo.com",
+    "description": "No-code platform for building mobile and web apps with drag-and-drop interface",
+    "contact_email": "hello@adalo.com",
+    "founder": "Adalo founders",
+    "pseo_opportunity": "No 'Adalo vs Bubble', 'Adalo vs Glide', 'no-code app builder alternatives'",
+    "estimated_size": "Series A $9.8M, St. Louis MO",
+    "category": "Developer Tools/No-Code"
+  },
+  {
+    "company": "Flowla",
+    "domain": "flowla.com",
+    "description": "AI-powered sales analytics and data intelligence platform for B2B sales teams",
+    "contact_email": "hello@flowla.com",
+    "founder": "Flowla founders",
+    "pseo_opportunity": "No 'Flowla vs Salesforce', 'Flowla vs HubSpot', 'sales intelligence alternatives'",
+    "estimated_size": "Seed $2.5M, UK",
+    "category": "Sales/Analytics"
+  },
+  {
+    "company": "Twin",
+    "domain": "twin.so",
+    "description": "AI agents for HR operations - automates HR workflows and employee communications",
+    "contact_email": "hello@twin.so",
+    "founder": "Twin founders",
+    "pseo_opportunity": "No 'Twin vs BambooHR', 'HR automation alternatives', 'AI HR assistant platforms'",
+    "estimated_size": "Seed $10M, France",
+    "category": "HR/AI"
+  },
+  {
+    "company": "Risotto",
+    "domain": "tryrisotto.com",
+    "description": "AI-powered IT helpdesk automation - handles IT requests and security operations",
+    "contact_email": "hello@tryrisotto.com",
+    "founder": "Risotto founders",
+    "pseo_opportunity": "No 'Risotto vs Freshservice', 'Risotto vs ServiceNow', 'IT helpdesk automation alternatives'",
+    "estimated_size": "Seed $10M, USA",
+    "category": "IT/Automation"
+  },
+  {
+    "company": "Limy AI",
+    "domain": "limy.ai",
+    "description": "AI-powered marketing analytics platform for campaign optimization and insights",
+    "contact_email": "hello@limy.ai",
+    "founder": "Limy AI founders",
+    "pseo_opportunity": "No 'Limy vs Google Analytics', 'AI marketing analytics alternatives', 'marketing measurement platforms'",
+    "estimated_size": "Seed $10M, USA",
+    "category": "Marketing/Analytics"
+  },
+  {
+    "company": "Curate",
+    "domain": "getcurate.com",
+    "description": "AI-powered analytics and marketing platform for hospitality and food & beverage businesses",
+    "contact_email": "hello@getcurate.com",
+    "founder": "Curate founders",
+    "pseo_opportunity": "No 'Curate vs Toast', 'restaurant marketing alternatives', 'hospitality analytics platforms'",
+    "estimated_size": "Seed $10M, USA",
+    "category": "Hospitality/Analytics"
+  },
+  {
+    "company": "Yolando",
+    "domain": "yolando.com",
+    "description": "AI-powered marketing analytics and insights platform for brands",
+    "contact_email": "hello@yolando.com",
+    "founder": "Yolando founders",
+    "pseo_opportunity": "No comparison pages for marketing analytics tools",
+    "estimated_size": "Seed $8.5M, Canada",
+    "category": "Marketing/AI"
+  },
+  {
+    "company": "Brickanta",
+    "domain": "brickanta.com",
+    "description": "AI-powered construction analytics and project management software",
+    "contact_email": "hello@brickanta.com",
+    "founder": "Brickanta founders",
+    "pseo_opportunity": "No 'Brickanta vs Procore', 'construction analytics alternatives', 'AI construction software'",
+    "estimated_size": "Seed $8M, Sweden",
+    "category": "Construction/Analytics"
+  },
+  {
+    "company": "Paraglide AI",
+    "domain": "paraglide.ai",
+    "description": "AI-powered accounting and finance automation platform",
+    "contact_email": "hello@paraglide.ai",
+    "founder": "Paraglide founders",
+    "pseo_opportunity": "No 'Paraglide vs Pilot', 'AI accounting alternatives', 'automated bookkeeping platforms'",
+    "estimated_size": "Seed $5M, Sweden",
+    "category": "Fintech/Accounting"
+  },
+  {
+    "company": "Mysa",
+    "domain": "mysa.io",
+    "description": "AI-powered accounting and finance platform for businesses in India",
+    "contact_email": "hello@mysa.io",
+    "founder": "Mysa founders",
+    "pseo_opportunity": "No 'Mysa vs Zoho Books', 'Indian accounting software alternatives', 'AI bookkeeping India'",
+    "estimated_size": "Seed $3.4M, India",
+    "category": "Fintech/Accounting"
+  }
+]
