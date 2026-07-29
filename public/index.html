@@ -1085,6 +1085,20 @@
       .footer-links { justify-content: center; }
     }
   </style>
+<!-- analytics: Vercel Web Analytics + first-party cookieless beacon -->
+<script defer src="/_vercel/insights/script.js"></script>
+<script>
+(function(){try{
+  var q=new URLSearchParams(location.search),n=navigator;
+  var b=JSON.stringify({site:"saasintegrate",path:location.pathname,ref:document.referrer||null,
+    utm_source:q.get("utm_source"),utm_medium:q.get("utm_medium"),utm_campaign:q.get("utm_campaign"),
+    sw:window.screen?window.screen.width:null,wd:n.webdriver===true,
+    hc:typeof n.hardwareConcurrency==="number"?n.hardwareConcurrency:null});
+  var u="https://aisotools.com/api/collect";
+  if(typeof n.sendBeacon==="function"){n.sendBeacon(u,new Blob([b],{type:"text/plain;charset=UTF-8"}));}
+  else{fetch(u,{method:"POST",body:b,mode:"no-cors",keepalive:true}).catch(function(){});}
+}catch(e){}})();
+</script>
 </head>
 <body>
 
